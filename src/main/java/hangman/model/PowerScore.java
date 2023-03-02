@@ -28,6 +28,9 @@ public class PowerScore implements GameScore {
      */
     @Override
     public int calculateScore(int correctCount, int incorrectCount) throws GameScoreException {
+        if( correctCount < 0 || incorrectCount <0 ) {
+            throw new GameScoreException(GameScoreException.NEGATIVE_NUMBERS);
+        }
 
         for( int i=1 ; i <=correctCount; i++){
             score+= (Math.pow(bonus,i));

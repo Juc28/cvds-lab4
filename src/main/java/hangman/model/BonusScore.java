@@ -26,7 +26,9 @@ public class BonusScore implements GameScore {
      */
     @Override
     public int calculateScore(int correctCount, int incorrectCount) throws GameScoreException {
-
+        if( correctCount < 0 || incorrectCount <0 ) {
+            throw new GameScoreException(GameScoreException.NEGATIVE_NUMBERS);
+        }
         score =( score+(correctCount*bonus) - (failure*incorrectCount) < minScore )? minScore :  score+(correctCount*bonus) - (failure*incorrectCount);
         return score;
     }
