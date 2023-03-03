@@ -51,7 +51,7 @@ public class GameScoreTest {
     //*********************************************OriginalScore***********************************************
 
     @Test
-    public void debeLanzarUnaExcepcionDelOriginal(){
+    public void calculateScore_score_debeLanzarUnaExcepcionDelOriginal(){
         try{
             //Act
             original.calculateScore(-1,-1);
@@ -65,7 +65,7 @@ public class GameScoreTest {
 
     // Limit test with  incorrectCount = 0
     @Test
-    public void deberiaSer100OnOriginal() throws GameScoreException {
+    public void calculateScore_score_deberiaSer100OnOriginal() throws GameScoreException {
         //Act
         int score = original.calculateScore(100,0);
         //Assert
@@ -75,7 +75,7 @@ public class GameScoreTest {
 
     // Limit test with  correctCount = 10
     @Test
-    public void deberiaSer500nOriginal() throws GameScoreException {
+    public void calculateScore_score_deberiaSer500nOriginal() throws GameScoreException {
         //Act
         int score = original.calculateScore(0,5);
         //Assert
@@ -84,7 +84,7 @@ public class GameScoreTest {
     }
     // Limit test with  incorrectCount = 10
     @Test
-    public void deberiaSer0EnOriginal() throws GameScoreException {
+    public void calculateScore_score_deberiaSer0EnOriginal() throws GameScoreException {
         //Act
         int score = original.calculateScore(0,10);
         //Assert
@@ -94,7 +94,7 @@ public class GameScoreTest {
 
     // Limit test with  incorrectCount = 10
     @Test
-    public void deberíaSerMínimoOriginal1() throws GameScoreException {
+    public void calculateScore_score_deberíaSerMínimoOriginal1() throws GameScoreException {
         //Act
         int score = original.calculateScore(26,11);
         //Assert
@@ -103,7 +103,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void deberíaSerMínimoOriginal2() throws GameScoreException {
+    public void calculateScore_score_deberíaSerMínimoOriginal2() throws GameScoreException {
         //Act
         int score = original.calculateScore(34,40);
         //Assert
@@ -113,7 +113,7 @@ public class GameScoreTest {
 
     //*********************************************BonusScore***********************************************
     @Test
-    public void debeLanzarUnaExcepcionDelBonus(){
+    public void calculateScore_score_debeLanzarUnaExcepcionDelBonus(){
         try{
             //Act
             bonus.calculateScore(-1,-1);
@@ -125,7 +125,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void deberíaSerUnBonoMínimo1() throws GameScoreException {
+    public void calculateScore_score_deberíaSerUnBonoMínimo1() throws GameScoreException {
         //Act
         int score = bonus.calculateScore(10,20);
         //Assert
@@ -134,7 +134,7 @@ public class GameScoreTest {
     }
     // Limit test with  incorrectCount = 0 ^  correctCount = 0
     @Test
-    public void deberíaSerUnBonoMínimo2() throws GameScoreException {
+    public void  calculateScore_score_deberíaSerUnBonoMínimo2() throws GameScoreException {
         //Act
         int score = bonus.calculateScore(0,0);
         //Assert
@@ -143,7 +143,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void deberíaSer100EnBonificación() throws GameScoreException {
+    public void calculateScore_score_deberíaSer100EnBonificación() throws GameScoreException {
         //Act
         int score = bonus.calculateScore(20,20);
         //Assert
@@ -153,7 +153,7 @@ public class GameScoreTest {
 
     //*****************************************PowerScore***************************************************
     @Test
-    public void deberíaLanzarUnaExcepciónDelPoder(){
+    public void calculateScore_score_deberíaLanzarUnaExcepciónDelPoder(){
         try{
             //Act
             power.calculateScore(-1,-1);
@@ -166,7 +166,7 @@ public class GameScoreTest {
 
     // Limit test with  incorrectCount = 0 ^  correctCount = 4
     @Test
-    public void deberíaSerMaxPuntuaciónPoder() throws GameScoreException {
+    public void calculateScore_score_deberíaSerMaxPuntuaciónPoder() throws GameScoreException {
         //Act
         int score = power.calculateScore(4,0);
         //Assert
@@ -175,7 +175,7 @@ public class GameScoreTest {
     }
 
     @Test
-    public void deberíaSerUnaPuntuaciónMínimaPotencia() throws GameScoreException {
+    public void calculateScore_score_deberíaSerUnaPuntuaciónMínimaPotencia() throws GameScoreException {
         //Act
         int score = power.calculateScore(0,15);
         //Assert
@@ -186,7 +186,7 @@ public class GameScoreTest {
 
 
     @Test
-    public void  deberíaSerUnPoderDePuntuaciónNormal() throws GameScoreException {
+    public void  calculateScore_score_deberíaSerUnPoderDePuntuaciónNormal() throws GameScoreException {
         //Act
         int score = power.calculateScore(4,63);
         //Assert
