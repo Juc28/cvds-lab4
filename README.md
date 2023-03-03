@@ -63,10 +63,13 @@ Incorpore el Contenedor Liviano Guice dentro del proyecto:
 	* Utilizar el idioma francés.
     * Utilizar el diccionario francés.
 	* etc...
+ ## Implementación de inyección
  
  ![4](https://github.com/Juc28/cvds-lab4/blob/master/pantallazos/CapturaPan3.png)
  
  ![5](https://github.com/Juc28/cvds-lab4/blob/master/pantallazos/CapturaPan4.png)
+ 
+ ## Ejecutar después de la inyección
  
  ![6](https://github.com/Juc28/cvds-lab4/blob/master/pantallazos/CapturaPan5.png)
  
