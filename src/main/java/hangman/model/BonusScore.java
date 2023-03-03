@@ -5,7 +5,7 @@ package hangman.model;
  * @author Mariana Pulido Moreno
  * @version 1.0 01/03/2023
  *
- * This Class is a type of score, that the game can use
+ * Esta clase es un tipo de puntaje que el juego puede usar
  */
 public class BonusScore implements GameScore {
     private int score = 0;
